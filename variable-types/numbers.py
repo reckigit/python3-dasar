@@ -14,6 +14,3 @@ del var1
 
 # hapus banyak variabel
 del var2,var3
-
-# CETAK VARIABEL KE LAYAR SETELAH VARIABEL DIHAPUS
-print("\nJika errors artinya variabel",var1,var2,var3,"telah terhapus")
