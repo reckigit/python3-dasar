@@ -16,63 +16,54 @@ def head():
     print("Halo Teman ! (Python3)")
     print("="*22)
 
+# FUNGSI INPUT PROMPT MENU
+def promp():
+    global menuselect
+    try:
+        menuselect = int(input("\nPilih Menu No. > "))
+    except ValueError:
+        print("\nAnda belum memilih,")
+        continu = input("Apakah anda masih ingin melanjutkan program ? (Y/y)\n> ")
+        if (continu.upper() == 'Y'):
+            promp()
+        else:
+            exit()
+
 # FUNGSI CETAK MENU UTAMA DI LAYAR
 def mainmenu():
     for Key in MainMenu:
         for Menu in MainMenu[Key]:
             print(f"{Key}. {Menu}")
-
-# FUNGSI INPUT PROMPT OPSI MENU
-def mainmenupromp():
-    # CETAK DAN MENERIMA INPUT MENU PILIHAN DI LAYAR
-    global menuselect
-    menuselect = int(input("\nPilih Menu No. > "))
-    domainmenupromp()
-
-# FUNGSI JALANKAN MENU PILIHAN DENGAN KONDISI BERIKUT
-def domainmenupromp():
-    os.system('clear')
-    try:
-    except ValueError:
-        print("Pilihan tidak ada")
-    print("SUKSES")
-    # dosubmenupromp()
-    mainpromp()
+    promp()
+    gosubmenu()
     
-# FUNGSI JALANKAN SUBMENU PILIHAN DENGAN KONDISI BERIKUT
-def dosubmenupromp():
+# FUNGSI CETAK SUBMENU DI LAYAR
+def gosubmenu():
     os.system('clear')
-    try:
-        if int(menuselect) == 1:
-            print("tipe2-variabel/numbers.py")
-            print('•'*48)
-            os.system('cat tipe2-variabel/numbers.py')
-            print('•'*48)
-    except ValueError:
-        print("Pilihan tidak ada")
-    restartpromp()
-
-# FUNGSI INPUT PROMPT KEMBALI KE MENU UTAMA ATAU KELUAR
-def mainpromp():
-    # CETAK DAN MENERIMA INPUT KEMBALI KE MENU DI LAYAR
-    global backto
-    backto = input("\nKembali ke Menu (Apapun => ENTER), Keluar dari Program (Q)\n>")
-    dorestartpromp()
-
-# FUNGSI JALANKAN PILIHAN KEMBALI KE MENU UTAMA ATAU KELUAR
-def domainpromp():
-    # MELAKUKAN PILIHAN MULAI LAGI ATAU BERHENTI
-    if (backto.upper() == 'Q'):
-        exit()
-    else:
-        begin()
+    for Menu in MainMenu[menuselect]:
+        print(f"{Menu}, terdapat pilihan :")
+        for SubMenu in MainMenu[menuselect][Menu]:
+            print(f"{SubMenu}. {MainMenu[menuselect][Menu][SubMenu]}")
+    promp()
+    global menu,selected
+    menu = Menu
+    selected = menuselect
+    reading()
+    
+def reading():
+    os.system('clear')
+    filereading = f"{(MainMenu[selected][menu][menuselect]).lower()}.py"
+    print(filereading)
+    print('•'*48)
+    # os.system('cat tipe2-variabel/numbers.py')
+    # print('•'*48)
 
 # FUNGSI MULAI PROGRAM
 def begin():
     os.system('clear')
     head()
     mainmenu()
-    mainmenupromp()
 
 # JALANKAN FUNGSI begin()
 begin()
+selected
