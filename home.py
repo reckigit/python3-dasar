@@ -26,12 +26,13 @@ def opt():
             print("\nAnda belum memilih,")
             continu = input("Apakah anda masih ingin melanjutkan program ? (Y/y)\n> ")
             if (continu.upper() == 'Y'):
-                opt()
+                begin()
             else:
                 exit()
 
 # FUNGSI CETAK MENU UTAMA DI LAYAR
 def mainmenu():
+    print("0. Quit")
     for Key in MainMenu:
         for Menu in MainMenu[Key]:
             print(f"{Key}. {Menu}")
@@ -43,6 +44,9 @@ def mainmenu():
 # FUNGSI CETAK SUBMENU DI LAYAR
 def gosubmenu():
     os.system('clear')
+    if (menuselect == 0):
+        print("Terima Kasih Teman ! (Python3)")
+        exit()
     try:
         for Menu in MainMenu[menuselect]:
             print(f"{Menu}, terdapat pilihan :")
@@ -69,7 +73,7 @@ def reading():
         if (dorunning.upper() == 'Y'):
             running()
         else:
-            pass
+            begin()
     except KeyError:
         begin()
 
