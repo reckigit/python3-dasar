@@ -9,7 +9,6 @@ print("Maaf, Ini masih dalam PENGERJAAN")
 # SEJUMLAH DICTIONARY
 MainMenu = {1:{'Variable Types':{1:'Numbers',2:'String',3:'List',4:'Tuple',5:'Dictionary'}},
 2:{'Conditions':{1:'IF'}}}
-ActOnFile = {1:'Baca',2:'Jalankan'}
 
 # FUNGSI CETAK BAGIAN KEPALA DI LAYAR
 def head():
@@ -52,11 +51,12 @@ def gosubmenu():
     
 def reading():
     os.system('clear')
+    container = (MainMenu[selected]).lower()).strip(" ","-")
     filereading = f"{(MainMenu[selected][menu][menuselect]).lower()}.py"
     print(filereading)
     print('•'*48)
-    # os.system('cat tipe2-variabel/numbers.py')
-    # print('•'*48)
+    os.system(f"cat {container}/{filereading}")
+    print('•'*48)
 
 # FUNGSI MULAI PROGRAM
 def begin():
@@ -66,4 +66,3 @@ def begin():
 
 # JALANKAN FUNGSI begin()
 begin()
-selected
