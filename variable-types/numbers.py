@@ -1,16 +1,22 @@
-# contoh variabel numbers
+'''
+Tipe data angka menyimpan nilai numerik. 
+Objek angka dibuat saat Anda memberikan nilai padanya.
+'''
 var1 = 1
 var2 = 2
 var3 = 3
-
-# cetak satu variabel ke layar
 print(var1)
-
-# cetak banyak variabel ke layar
 print(var2,var3)
 
-# hapus satu variabel
+'''
+Anda juga dapat menghapus referensi ke objek number 
+dengan menggunakan pernyataan del. 
+Sintaks dari pernyataan del
+'''
 del var1
 
-# hapus banyak variabel
+'''
+Anda dapat menghapus satu objek 
+atau beberapa objek dengan menggunakan pernyataan del
+'''
 del var2,var3
