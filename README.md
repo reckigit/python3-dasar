@@ -10,6 +10,13 @@ mudah dipahami dan dipraktikkan bagi pemula.
 ## Apa yang baru
 - Tue, Jan 12<sup>th</sup> 2021 - Memperbaiki kesalahan
 - Terus dalam pengembangan (penulisan).
+- Materi :
+  > - Variable Types
+  >   - Numbers
+  >   - String
+  >   - List
+  >   - Tuple
+  >   - Dictionary
 
 ## Petunjuk penggunaan
 - Instalasi Python3
