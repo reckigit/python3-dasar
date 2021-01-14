@@ -68,8 +68,33 @@ dan *j* adalah **unit imajiner**.
 
 **String** dalam Python diidentifikasi sebagai *sekumpulan karakter* 
 yang berdekatan yang direpresentasikan dalam tanda kutip. 
-Python mengizinkan pasangan *tanda kutip tunggal* atau *ganda*.
+Python mengizinkan pasangan *tanda kutip tunggal* atau *ganda*. 
+Himpunan bagian dari **string** dapat diambil menggunakan *operator slice ([] dan [:])* 
+dengan *indeks yang dimulai dari 0 di awal* **string** 
+dan *bekerja dari -1 hingga akhir*.
 
 
 ### Python Lists
 
+**List** adalah *tipe data* gabungan Python yang paling serbaguna. 
+Sebuah **list** berisi *item yang dipisahkan dengan koma* 
+dan *diapit oleh tanda kurung siku ([])*.
+> Untuk beberapa hal, **list** mirip dengan *array di C*. 
+> Salah satu perbedaan di antara mereka adalah 
+> bahwa semua item yang termasuk dalam list 
+> bisa dari tipe data yang berbeda.
+
+Nilai yang disimpan dalam **list** dapat diakses menggunakan *operator slice ([] dan [:])* 
+dengan *indeks yang dimulai dari 0 di awal* **list** dan *bekerja hingga akhir -1*.
+
+
+### Python Tuples
+
+**Tuple** adalah *tipe data* urutan lain yang mirip dengan *list*. 
+*Tupel* terdiri dari *sejumlah nilai yang dipisahkan dengan koma*. 
+
+> Perbedaan utama antara **list** dan *tuple* adalah 
+> *List* diapit oleh tanda kurung ([]) dan elemen 
+> serta ukurannya dapat diubah, 
+> sedangkan **tupel** diapit dalam tanda kurung (()) 
+> dan tidak dapat diperbarui
