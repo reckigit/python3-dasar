@@ -127,4 +127,4 @@ Untuk **mengonversi antar tipe**, Anda cukup menggunakan *nama tipe* sebagai fun
 Ada beberapa *fungsi bawaan* untuk melakukan *konversi dari satu tipe data ke tipe lainnya*. 
 *Fungsi ini mengembalikan objek baru* yang mewakili nilai yang dikonversi.
 
-<img src="img/tabel-built-in-functions" width="300"/>
+<img src="img/tabel-fungsi-bawaan" width="300"/>
