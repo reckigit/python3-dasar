@@ -98,3 +98,33 @@ dengan *indeks yang dimulai dari 0 di awal* **list** dan *bekerja hingga akhir -
 > serta ukurannya dapat diubah, 
 > sedangkan **tupel** diapit dalam tanda kurung (()) 
 > dan tidak dapat diperbarui
+
+
+### Python Dictionary
+
+**Dictionary** adalah jenis tabel hash. 
+Mereka bekerja seperti *array asosiatif* 
+atau *hash yang ditemukan di Perl* 
+dan terdiri dari pasangan *nilai kunci*.
+**Dictionary** dapat berupa hampir semua jenis Python, 
+tetapi biasanya berupa *angka atau string*. 
+Nilai, di sisi lain, *bisa berupa sembarang objek* Python.
+
+**Dictionary** diapit oleh *tanda kurung kurawal ({})* 
+dan *nilai bisa ditetapkan* 
+dan *diakses menggunakan tanda kurung siku ([])*.
+
+> **Dictionary** tidak memiliki konsep keteraturan antar elemen. 
+> Tidak benar untuk mengatakan bahwa elemen-elemen tersebut *"rusak"*; 
+> mereka tidak berurutan.
+
+
+## Data Type Conversion
+
+Terkadang, Anda mungkin perlu melakukan **konversi di antara tipe bawaan**. 
+Untuk **mengonversi antar tipe**, Anda cukup menggunakan *nama tipe* sebagai fungsi.
+
+Ada beberapa *fungsi bawaan* untuk melakukan *konversi dari satu tipe data ke tipe lainnya*. 
+*Fungsi ini mengembalikan objek baru* yang mewakili nilai yang dikonversi.
+
+<img src="img/tabel-built-in-functions" width="300"/>
